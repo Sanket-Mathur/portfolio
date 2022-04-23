@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-h1, h2, h3, p {
+h1, h2, h3, h4, p, li {
     margin: var(--spacing);
     text-align: center;
 }
@@ -26,9 +26,20 @@ h3 {
     font-size: 1.5rem;
     font-weight: 300;
 }
-p {
+h4 {
+    margin: 1.5rem;
+    font-size: 1.4rem;
+}
+p, li {
     font-size: 1.2rem;
     font-weight: 300;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    margin: 0.2rem;
 }
 a {
     font-size: 18px;
@@ -110,4 +121,19 @@ a {
 /* introduction styles */
 .introduction-text {
     margin: 0.5in 25vw 0 25vw;
+}
+.techstack {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, var(--background) 80%, var(--background-contrast) 20%);
+}
+.techstack-section {
+    width: 20vw;
+    background-color: var(--background);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.techstack-heading {
+    font-weight: 500;
+    color: var(--background-contrast);
 }
