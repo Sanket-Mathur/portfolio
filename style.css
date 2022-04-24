@@ -4,6 +4,7 @@
     --spacing: 1rem;
     --background: #fff;
     --background-contrast: #7510F7;
+    --project-background: #141C3A;
 }
 
 /* global styles */
@@ -66,9 +67,13 @@ a {
     align-items: center;
 }
 .introduction {
-    padding: 1.2in;
+    padding: 1.2in 0;
     color: var(--background);
     background-color: var(--background-contrast);
+}
+.work {
+    text-align: center;
+    padding: 1.2in;
 }
 
 /* header styles */
@@ -120,7 +125,7 @@ a {
 
 /* introduction styles */
 .introduction-text {
-    margin: 0.5in 25vw 0 25vw;
+    margin: 0.5in 30vw 0 30vw;
 }
 .techstack {
     display: flex;
@@ -136,4 +141,57 @@ a {
 .techstack-heading {
     font-weight: 500;
     color: var(--background-contrast);
+}
+
+/* work grid styles */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    grid-gap: calc(var(--spacing) * 2);
+    text-align: center;
+    margin: 1in 10vw;
+}
+.work-item {
+    background-color: var(--background);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: var(--spacing);
+}
+.work-item {
+    display: flex;
+    height: 3in;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url('/images/projects/prime-rhymes.png') no-repeat center center;
+    background-size: cover;
+    transition: background .5s;
+}
+.work-item * {
+    opacity: 0;
+    font-weight: 400;
+    color: var(--background);
+    transition: opacity .2s;
+}
+.work-item a {
+    color: var(--background);
+    border: 2px solid var(--background-contrast);
+    border-radius: calc(var(--spacing) * 2);
+    transition: background-color .2s, color .2s;
+}
+.work-item:hover {
+    background: var(--project-background);
+}
+.work-item:hover * {
+    opacity: 1;
+}
+.work-item a:hover {
+    background-color: var(--background-contrast);
+}
+.github-link {
+    padding: 20px 30px;
+}
+.github-link img {
+    height: 30px;
+    margin: 0 15px -7px 0;
 }
