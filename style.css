@@ -76,6 +76,15 @@ a {
     text-align: center;
     padding: 1.2in;
 }
+.footer {
+    display: flex;
+    padding: 1in 0;
+    color: var(--background);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-contrast);
+}
 
 /* header styles */
 .hire-link {
@@ -186,6 +195,14 @@ a {
 .work-item a:hover {
     background-color: var(--background-contrast);
 }
+.email-link {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
+    color: var(--background-contrast);
+}
 .github-link {
     padding: 20px 30px;
 }
@@ -207,9 +224,6 @@ a {
     padding: 0 0 var(--spacing) 0;
     border-left: 2px solid var(--background-contrast);
 }
-.experience-cell:last-child {
-    padding: 0;
-}
 .experience-cell::before {
     content: ' ';
     display: block;
@@ -225,5 +239,10 @@ a {
     text-align: left;
 }
 .experience-item h3:last-of-type {
+    margin-top: 0.5in;
+}
+
+/* footer styles */
+.social-links {
     margin-top: 0.5in;
 }
