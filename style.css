@@ -144,6 +144,7 @@ a {
 }
 .techstack-section {
     width: 20vw;
+    text-align: center;
     background-color: var(--background);
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -151,6 +152,9 @@ a {
 .techstack-heading {
     font-weight: 500;
     color: var(--background-contrast);
+}
+.techstack-images {
+    margin-top: 0.4in;
 }
 
 /* work grid styles */
@@ -170,7 +174,8 @@ a {
     align-items: center;
     border: 1px solid lightgray;
     border-radius: 10px;
-    background: url('/images/projects/prime-rhymes.png') no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     transition: background .5s;
 }
@@ -187,7 +192,7 @@ a {
     transition: background-color .2s, color .2s;
 }
 .work-item:hover {
-    background: var(--project-background);
+    background: var(--project-background) !important;
 }
 .work-item:hover * {
     opacity: 1;
