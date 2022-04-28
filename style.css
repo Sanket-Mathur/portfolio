@@ -87,10 +87,10 @@ a {
 }
 
 /* header styles */
-.hire-link {
+.resume-link {
     transition: color .2s;
 }
-.hire-link:hover {
+.resume-link:hover {
     color: var(--background-contrast);
 }
 .contact-link {
