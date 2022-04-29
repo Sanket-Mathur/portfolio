@@ -78,7 +78,7 @@ a {
 }
 .footer {
     display: flex;
-    padding: 1in 0;
+    padding: 1in 0 0.5in 0;
     color: var(--background);
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ a {
     transition: background-color .2s, color .2s;
 }
 .contact-link:hover {
-    background-color: var(--background-contrast);
+    background-color: var(--background-contrast) !important;
     color: var(--background);
 }
 
@@ -245,6 +245,60 @@ a {
 }
 .experience-item h3:last-of-type {
     margin-top: 0.5in;
+}
+
+/* contact section styles */
+.contact-tagline {
+    font-weight: 300;
+}
+.contact-form {
+    display: flex;
+    width: 40vw;
+    margin: 0.5in auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form p {
+    text-align: left;
+    margin: var(--spacing) 0;
+}
+.contact-form input, .contact-form textarea {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+.contact-form input[type="submit"] {
+    font-weight: 400;
+    margin: 0.5in;
+    padding: 0.5rem 5rem;
+    border: 2px solid var(--background-contrast);
+    border-radius: 2rem;
+    background-color: var(--background);
+}
+.form-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.form-half {
+    display: flex;
+    width: 50%;
+    padding: var(--spacing);
+    flex-direction: column;
+    justify-content: center;
+}
+.form-bottom {
+    display: flex;
+    width: 100%;
+    padding: var(--spacing);
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* footer styles */
