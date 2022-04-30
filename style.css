@@ -139,11 +139,12 @@ a {
 }
 .techstack {
     display: flex;
+    padding: 0 1in;
     justify-content: center;
     background: linear-gradient(0deg, var(--background) 80%, var(--background-contrast) 20%);
 }
 .techstack-section {
-    width: 20vw;
+    width: 4in;
     text-align: center;
     background-color: var(--background);
     border: 1px solid lightgray;
