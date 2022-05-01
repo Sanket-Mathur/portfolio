@@ -58,6 +58,8 @@ a {
     height: 100%;
 }
 .header {
+    display: flex;
+    justify-content: space-between;
     text-align: end;
     padding: var(--spacing) 15vw;
 }
@@ -87,6 +89,9 @@ a {
 }
 
 /* header styles */
+.logo {
+    height: 50px;
+}
 .resume-link {
     transition: color .2s;
 }
@@ -314,7 +319,13 @@ a {
 @media (max-width: 767px) {
     .header {
         padding: 0;
+    }
+    .header section {
+        width: 100%;
         text-align: center;
+    }
+    .logo {
+        display: none;
     }
     .introduction-text {
         margin: 0.5in 0.5in 0 0.5in;
