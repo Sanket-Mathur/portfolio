@@ -1,7 +1,8 @@
 {
     "name": "Sanket Mathur - Portfolio",
     "short_name": "Sanket Mathur",
-    "start_url": "/",
+    "start_url": "./",
+    "scope": ".",
     "icons": [
         {
             "src": "icons/manifest-icon-192.maskable.png",
