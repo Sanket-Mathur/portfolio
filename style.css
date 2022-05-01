@@ -161,10 +161,10 @@ a {
 /* work grid styles */
 .work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(4in, 1fr));
+    margin: 1in 7vw;
     grid-gap: calc(var(--spacing) * 2);
     text-align: center;
-    margin: 1in 10vw;
 }
 .work-item {
     display: flex;
@@ -185,6 +185,7 @@ a {
     font-weight: 400;
     color: var(--background);
     transition: opacity .2s;
+    overflow-y: hidden;
 }
 .work-item a {
     color: var(--background);
@@ -217,7 +218,7 @@ a {
     margin: 0 15px -7px 0;
 }
 
-/* experience grid */
+/* experience grid styles */
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
@@ -228,6 +229,7 @@ a {
 }
 .experience-cell {
     padding: 0 0 var(--spacing) 0;
+    left: 10px;
     border-left: 2px solid var(--background-contrast);
 }
 .experience-cell::before {
@@ -248,7 +250,7 @@ a {
     margin-top: 0.5in;
 }
 
-/* contact section styles */
+/* contact styles */
 .contact-tagline {
     font-weight: 300;
 }
@@ -289,7 +291,7 @@ a {
 }
 .form-half {
     display: flex;
-    width: 50%;
+    width: 100%;
     padding: var(--spacing);
     flex-direction: column;
     justify-content: center;
@@ -304,5 +306,73 @@ a {
 
 /* footer styles */
 .social-links {
-    margin-top: 0.5in;
+    text-align: center;
+    margin: 0.5in 0.2in 0 0.2in;
+}
+
+/* media queries */
+@media (max-width: 767px) {
+    .header {
+        padding: 0;
+        text-align: center;
+    }
+    .introduction-text {
+        margin: 0.5in 0.5in 0 0.5in;
+    }
+    .techstack {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .techstack-section {
+        margin-bottom: 1rem;
+        max-width: 90vw;
+    }
+    .work {
+        padding: 1.2in 0;
+    }
+    .work-grid {
+        margin: inherit 0;
+        grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+    }
+    .work-item h4, .work-item a {
+        font-size: 1rem;
+        line-height: normal;
+        margin: 0.5rem;
+        overflow-y: hidden;
+    }
+    .work-item section {
+        display: flex;
+        flex-direction: column;
+    }
+    .experience-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .form-top {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .techstack {
+        padding: 0 0.2in;
+    }
+    .work-grid {
+        margin: 1in 1in;
+    }
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .work-grid {
+        margin: 1in 0;
+    }
+    .contact-form {
+        width: 60%;
+    }
 }
