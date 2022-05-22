@@ -130,6 +130,9 @@ a {
     height: 6.8in;
 }
 .coffee {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
     color: #b8825c;
     font-weight: 400;
 }
